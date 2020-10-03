@@ -56,6 +56,10 @@ public class Computer {
             this.speed=speed;
 
     }
+    public void setRAM(int RAM){
+        this.RAM = RAM;
+    }
+
 
     public void setPrice(double price){
         this.price=price;
