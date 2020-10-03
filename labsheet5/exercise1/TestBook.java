@@ -1,17 +1,23 @@
-package labsheet4.exercise1.Exercise5;
+package labsheet5.exercise1;
 
 //TestBook.java
 /*A driver class for the Book class based on Exercise 5 which gets the user to create objects
 * for their favourite and least-favourite books, using user-supplied values on input dialogs*/
 
+import labsheet4.Exercise5.Book;
+
 import javax.swing.*;
 import java.awt.*;
+import labsheet3.exercise1.Computer;
 
 public class TestBook {
     public static void main(String[] args) {
         String title, ISBN, output = "";
         double price;
         int pages;
+        Computer c1 = new Computer();
+
+        System.out.println(c1.getManufacturer());
 
         JTextArea textArea = new JTextArea();
         Font font = new Font("monospaced",Font.PLAIN,12);

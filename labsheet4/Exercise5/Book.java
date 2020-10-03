@@ -1,4 +1,4 @@
-package labsheet4.exercise1.Exercise5;
+package labsheet4.Exercise5;
 
 //Book.java
 /*An instantiable class which defines a Book, this version is based on exercise 5 which

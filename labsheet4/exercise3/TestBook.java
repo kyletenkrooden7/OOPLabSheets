@@ -1,4 +1,4 @@
-package labsheet4.exercise1.exercise3;
+package labsheet4.exercise3;
 
 import javax.swing.*;
 
