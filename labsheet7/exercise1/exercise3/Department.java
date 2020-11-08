@@ -1,21 +1,35 @@
 package labsheet7.exercise1.exercise3;
 
-import java.util.Arrays;
+//Department.java
+/*An instantiable Department class*/
 
 public class Department {
     private String name;
-    private Student[] students;
+    private Student students[];
 
-    public Department(String name, Student[] students)
+    Department(String name, Student students[])
     {
         setName(name);
         setStudents(students);
-
-
     }
 
+    public String getName() {
+        return name;
+    }
 
-    public String toString() {
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setStudents(Student[] students) {
+        this.students = students;
+    }
+
+    public Student[] getStudents() {
+        return students;
+    }
+
+    public String toString(){
         String str = "\nName: " + getName() + "\nList of Students: \n\n";
 
         for(int i=0;i<getStudents().length;i++)
@@ -23,22 +37,5 @@ public class Department {
                 str+=students[i];
 
         return str;
-    }
-
-    public void setName(String name)
-    {
-        this.name=name;
-    }
-
-    public void setStudents(Student[] students) {
-        this.students = students;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public Student[] getStudents() {
-        return students;
     }
 }

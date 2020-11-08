@@ -1,47 +1,45 @@
 package labsheet7.exercise1.exercise3;
 
+//Student.java
+/*An instantiable Student class*/
+
 public class Student {
-    private int id;
+
     private String name;
-    private String department;
+    private int id;
+    private String dept;
 
-    public Student(int id, String name, String department)
-    {
-        setId(id);
+    Student(String name, int id, String dept) {
         setName(name);
-        setDepartment(department);
-    }
-    public String toString()
-    {
-        return "Name: " + getName() +"id: "+ getId()+
-                " Department: " + getDepartment() + "\n"
-                ;
-    }
-
-    public void setId(int id)
-    {
-        this.id=id;
-
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setDepartment(String department) {
-        this.department = department;
-    }
-
-    public int getId()
-    {
-        return id;
+        setId(id);
+        setDept(dept);
     }
 
     public String getName() {
         return name;
     }
 
-    public String getDepartment() {
-        return department;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getDept() {
+        return dept;
+    }
+
+    public void setDept(String dept) {
+        this.dept = dept;
+    }
+
+    public String toString(){
+        return "Name: " + getName() + "  ID: " + getId() + "  Department: " + getDept() + "\n";
     }
 }
